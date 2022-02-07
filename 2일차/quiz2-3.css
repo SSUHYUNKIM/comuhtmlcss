@@ -1,0 +1,25 @@
+.box1{
+  width: 22em;
+  float: right;
+  border: 1px solid #a2a9b1;
+}
+.name{
+  background-color: lightgray;
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+}
+.information{
+  background-color: lightgray;
+}
+.box2{
+  border: 1px solid #a2a9b1;
+  padding: 3px;
+  margin: 1em auto 0;
+}
+th, th, td{
+  border: 1px solid #bcbcbc;
+}
+.winter{
+  background-color: rgb(228, 176, 252);
+}
