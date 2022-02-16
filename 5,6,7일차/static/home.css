@@ -1,0 +1,97 @@
+.centerbox{
+  background-color: gainsboro;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.center1{
+  flex: 0.1;
+  background-color: gainsboro;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.center2{
+  flex: 1;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.center3{
+  flex: 0.5;
+  background-color: white;
+  margin: 20px 15px 0px 15px;
+  line-height: 60%;
+}
+
+.center4{
+  flex: 5;
+  background-color: white;
+  display: flex;
+}
+
+.center5{
+  flex: 1;
+  background-color: white;
+  margin: 0px 15px 15px 15px;
+  font-size: 13px;
+  line-height: 200%;
+  font-family: 'Noto Sans KR';
+  font-weight: bold;
+}
+
+.center6{
+  flex: 1;
+  background-color: white;
+  margin: 0px 15px 15px 15px;
+  font-family: 'NeoDunggeunmo';
+  font-weight: bolder;
+  line-height: 10%;
+}
+
+.center7{
+  flex: 9;
+  background-color: white;
+  margin: 10px 15px 15px 15px;
+  font-family: 'KyoboHand';
+
+  margin: 10px;
+  line-height: 60%;
+}
+
+.titlebold{
+  font-family: 'KOTRA_BOLD-Bold';
+  color:rgb(101, 145, 170);
+  font-size : 20px;
+  display: block;
+}
+
+.redbox{
+  background-color: rgb(206, 103, 103);
+  color: white;
+  width: 50px;
+  height: 20px;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.bluebox{
+  background-color: rgb(111, 111, 214);
+  color: white;
+  width: 50px;
+  height: 20px;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+}

@@ -1,0 +1,95 @@
+body{
+  background-image: url('../static/images/pattern.png');
+  background-size: 100px;
+  background-color: rgb(160, 160, 160);
+  height: 100%;
+}
+.bookcover{
+  background-color : #bfdae2;
+  border-radius: 10px;
+  border: 1px solid #6d777a;
+  width: 1000px;
+  height: 700px;
+  margin: 100px auto;
+}
+.bookdot{
+  display: flex;
+  border-color : white;
+  border-width: 3px;
+  width:970px;
+  height:670px;
+  border-style: dashed;
+  margin: 12px auto;
+  border-radius: 10px;
+}
+.page{
+  background-color : gainsboro;
+  border-radius: 10px;
+  width: 950px;
+  height: 650px;
+  margin: 10px auto;
+  display: flex;
+}
+.box{
+  border: 1px solid grey;
+}
+.leftbox{
+  background-color: gainsboro;
+  display: flex;
+  flex: 0.4;
+  flex-direction: column;
+  margin: 15px;
+
+}
+.left1{
+  flex: 1;
+  background-color: gainsboro;
+  text-align: center;
+  font-family: 'NeoDunggeunmo';
+  font-size: 16px;
+}
+.left2{
+  flex: 10;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.left3{
+  flex: 4;
+  border: 1px solid lightgrey;
+  background-color: white;
+  margin: 10px;
+}
+.left4{
+  flex: 2;
+  background-color: white;
+  font-family: 'KyoboHand';
+  margin: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 15px;
+}
+.left5{
+  flex: 4;
+  background-color: white;
+  font-family: 'KyoboHand';
+  margin: 10px;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.left6{
+  flex: 1;
+  background-color: white;
+  margin: 10px 15px 15px 15px;
+  font-family: 'KyoboHand';
+}
+.menu{
+  background-color: gainsboro;
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+  margin: 15px 15px 15px 0px;
+}
