@@ -86,10 +86,37 @@ body{
   margin: 10px 15px 15px 15px;
   font-family: 'KyoboHand';
 }
-.menu{
+.surfing{
+  font-size:15px;
+  font-family:'KyoboHand';
+  width: 150px;
+  height: 30px;
+  margin: 10px 0px 0px 0px;
+}
+.rightbox{
   background-color: gainsboro;
   display: flex;
   flex: 0.2;
   flex-direction: column;
   margin: 15px 15px 15px 0px;
+}
+.menu{
+  position:relative;
+  top:70px;
+  font-family: 'NeoDunggeunmo';
+  font-size: 15px;
+}
+.home, .diary, .photo, .guest{
+  background-color: rgba(83, 152, 231, 0.76);
+  color: white;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 0px 10px 10px 0px;
+  width: 100px;
+  height: 20px;
+  line-height: 25px;
+}
+.home:hover, .diary:hover, .photo:hover, .guest:hover{
+  background-color: rgb(123, 123, 209);
 }
