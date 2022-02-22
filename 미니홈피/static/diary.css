@@ -27,18 +27,21 @@
   font-family: 'KyoboHand';
   flex:1;
   margin: 5px 5px 5px 15px;
+  color:rgb(83, 160, 231);
+  font-weight: bold;
 }
 .calendar{
   flex-wrap: wrap;
   flex:10;
   margin-right: 5px;
+  font-weight: bold;
 }
 
 .diarycontainer{
   height: auto;
   width: auto;
   border: 1px solid lightgrey;
-  margin-right: 15px;
+  margin-bottom: 15px;
   padding: 5px;
 }
 .diarytitle{
