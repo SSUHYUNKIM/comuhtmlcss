@@ -1,3 +1,7 @@
+.hidden{
+  display: none;
+}
+
 .diarycenter{
   flex: 1;
   border: 1px solid lightgrey;
@@ -77,4 +81,22 @@
 .secretbutton:hover{
   color:white;
   background-color: rgb(108, 199, 179);
+}
+.secretcontainer{
+  height: auto;
+  width: auto;
+  border: 1px solid lightgrey;
+  margin-right: 15px;
+}
+.secrettitle{
+  color:rgb(109, 109, 201);
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.secretcontent{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
 }
