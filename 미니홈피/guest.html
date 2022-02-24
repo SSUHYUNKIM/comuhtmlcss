@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>2021 MINI HOMEPAGE</title>
+  <link rel="stylesheet" href="./static/font.css" />
+  <link rel="stylesheet" href="./static/home.css" />
+  <link rel="stylesheet" href="./static/layout.css" />
+  <link rel="stylesheet" href="./static/guest.css" />
+</head>
+
+<body>
+  <div class="bookcover">
+    <div class="bookdot">
+      <div class="page">
+        <div class="leftbox">
+          <div class="left1">
+            <p>TODAY <span style="color:red;">28</span> | TOTAL 234918</p>
+          </div>
+          <div class="left2">
+            <div class="left3"><img src="static/images/profile.jpg"
+                style="width:100%; height:100%; object-fit:cover;" /></div>
+            <div class="left4">
+              저는 주식이 뭐냐구요? 설명충을 주로<br>
+              좋아합니다. 여러분들에게 설명해주면<br>
+              서 얻어가는 설명충이 제가 제일 좋<br>
+              아하는 음식이죠 ^.^<br><br>
+            </div>
+            <div class="left5">
+              수달 = 설명충 ㅇㅋ?<br>
+            </div>
+            <div class="left6">
+              수달(。・ω・。)
+              <select name="surfing" class="surfing" onchange="window.open(value,'_blank');">
+                <option value="none" selected disabled hidden>파도타기</option>
+                <option value="https://cafe.naver.com/codeuniv">코뮤니티로 가기</option>
+                <option value="https://www.instagram.com/coding_comu/">인스타그램으로 가기</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="centerbox">
+          <div class="center1">
+            <pre><p>수달의 추억상ㅈr...❤ ผ(•̀_•́ผ)         <span style="font-size: 13px;">https://codemate.kr/@shyunk223</span></p></pre>
+          </div>
+          <div class="guestcenter">
+            <div class="guestcontainer">
+              <div class="guesttitle">No. 151 참새 🏠 (2012.02.31 19:32)</div>
+              <div class="contentbox">
+                <div class="guestimage"><img src="static/images/guest1.jpg" style="width:100%; height:100%;" /></div>
+                <div class="guestcontent">
+                  갑자기 미한한데 나도 참다 참다 말하는건데<br>
+                  저번에도 그러더니 진짜 실망이야 조금 너 이런식으로 계속<br>
+                  이면 나는 너에 대한 감정 쌓이고 쌓이고 쌓이면<br><br>
+                  싸이먼도미닉<br>
+                </div>
+              </div>
+            </div>
+            <div class="guestcontainer">
+              <div class="guesttitle">No. 150 개미 🏠 (2012.02.30 14:71)</div>
+              <div class="contentbox">
+                <div class="guestimage"><img src="static/images/guest2.jpg" style="width:100%; height:100%;" /></div>
+                <div class="guestcontent">
+                  여진이 저녁즈음에 한강이 너무 예쁘다길래<br>
+                  오 그쵸 예쁘죠 했더니 "역시 고구려 백제 신라가 서로 손에<br>
+                  넣으려고 싸울만 했다"는 표현을 해서<br>
+                  잠시 어떤 대답을 해야할지 당황하고 말았음.<br>
+                </div>
+              </div>
+            </div>
+            <div class="guestcontainer">
+              <div class="guesttitle">No. 149 rha 🏠 (2012.02.29 13:00)</div>
+              <div class="contentbox">
+                <div class="guestimage"><img src="static/images/guest3.jpg" style="width:100%; height:100%;" /></div>
+                <div class="guestcontent">
+                  우리집 강아지랑 산책을 쫄래쫄래 하고있는데<br>
+                  한 꼬마아이가 와서는 "와-~ 너 귀엽다~ 몇살이야?" 라길래<br>
+                  내가 대신 "열 두살이야" 라고 했더니<br>
+                  갑자기 아이 얼굴이 어두워지면서 "형 미안해요"라고 했다.<br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightbox">
+          <div class="menu">
+            <div class="home" OnClick="location.href ='home.html'">홈</div>
+            <div class="diary" OnClick="location.href ='diary.html'">다이어리</div>
+            <div class="photo" OnClick="location.href ='photo.html'">사진첩</div>
+            <div class="guest" OnClick="location.href ='guest.html'">방명록</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const secretContainer = document.querySelector(".secretcontainer");
+    const secretButton = document.querySelector(".secretbutton");
+    function getTextFile() {
+      ;
+      var input = document.createElement("input");
+      input.type = "file";
+      input.accept = "text/plain";
+      input.onchange = function (event) {
+        processFile(event.target.files[0]);
+      };
+      input.click();
+      secretContainer.classList.remove("hidden");
+      secretButton.style.display = "none";
+    }
+
+
+    function processFile(file) {
+      var reader = new FileReader();
+      reader.readAsText(file, "utf-8");
+
+
+      reader.onload = function () {
+        document.querySelector(".secretcontent").innerText = reader.result;
+      };
+    }
+  </script>
+</body>
+
+</html>
